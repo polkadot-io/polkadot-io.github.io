@@ -6,9 +6,7 @@
   src: url('../fonts/Noto-Sans-regular/Noto-Sans-regular.eot?#iefix') format('embedded-opentype'),
        local('Noto Sans'),
        local('Noto-Sans-regular'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.woff') format('woff'),
-       url('../fonts/Noto-Sans-regular/Noto-Sans-regular.ttf') format('truetype'),
+       url('../fonts/Noto-Sans-regular.ttf') format('truetype'),
        url('../fonts/Noto-Sans-regular/Noto-Sans-regular.svg#NotoSans') format('svg');
 }
 
@@ -20,9 +18,7 @@
   src: url('../fonts/Noto-Sans-700/Noto-Sans-700.eot?#iefix') format('embedded-opentype'),
        local('Noto Sans Bold'),
        local('Noto-Sans-700'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.woff') format('woff'),
-       url('../fonts/Noto-Sans-700/Noto-Sans-700.ttf') format('truetype'),
+       url('../fonts/NotoSans-Bold.ttf') format('truetype'),
        url('../fonts/Noto-Sans-700/Noto-Sans-700.svg#NotoSans') format('svg');
 }
 
@@ -35,8 +31,7 @@
        local('Noto Sans Italic'),
        local('Noto-Sans-italic'),
        url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff2') format('woff2'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-italic/Noto-Sans-italic.ttf') format('truetype'),
+       url('../fonts/NotoSans-Italic.ttf') format('truetype'),
        url('../fonts/Noto-Sans-italic/Noto-Sans-italic.svg#NotoSans') format('svg');
 }
 
@@ -50,7 +45,7 @@
        local('Noto-Sans-700italic'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff2') format('woff2'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.woff') format('woff'),
-       url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf') format('truetype'),
+       url('../fonts/NotoSans-BoldItalic.ttf') format('truetype'),
        url('../fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg#NotoSans') format('svg');
 }
 
