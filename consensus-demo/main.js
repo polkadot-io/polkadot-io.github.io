@@ -400,6 +400,7 @@ class World {
 		p1.addPeer(p2.id);
 		p2.addPeer(p1.id);
 	}
+
 	disconnect (p1, p2) {
 		p1.killPeer(p2.id);
 		p2.killPeer(p1.id);
@@ -437,20 +438,22 @@ class World {
 	}
 }
 
-window.world = new World();
-window.world.startRound();
+var world = new World();
+world.startRound();
 
 function start() {
-	window.world.startRound();
+	world.startRound();
 	update();
 }
 
 function tick() {
-	window.world.tickRound();
+	world.tickRound();
 	update();
 }
 
 function update() {
+	if (typeof window == "undefined") { return; }
+	window.world = world;
 	document.getElementById('app').innerHTML = window.world.render();
 }
 
