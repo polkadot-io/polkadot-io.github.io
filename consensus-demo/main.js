@@ -315,11 +315,10 @@ class Node {
 }
 
 function shuffle(n) {
-	let ret = [];
-	for (let i = 0; i < n; ++i) {
-		ret.push(i);
-	}
-	for (let i = 0; i < n * 16; ++i) {
+	// Generates array with length parameter n (i.e. [0,1,2] for n of 3 then shuffles
+	let loopFactor = 16;
+	let ret = Array.apply(null, Array(n)).map(function (x, i) { return i; });
+	for (let i = 0; i < n * loopFactor; ++i) {
 		let x = Math.floor(Math.random() * n);
 		let y = i % n;
 		if (x != y) {
