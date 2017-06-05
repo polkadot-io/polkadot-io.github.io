@@ -392,7 +392,7 @@ class World {
 		 */
 		let s = shuffle(this.nodes.length);
 		s.forEach((n, i) => {
-			if (i > 0) {
+			if (i > 1) {
 				let j = s[i - 1];
 				this.connect(this.nodes[n], this.nodes[j]);
 			}
