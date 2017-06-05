@@ -386,6 +386,10 @@ class World {
 	}
 
 	connectLinear() {
+		/*
+		 * Uses shuffle function to obtain shuffled array of nodes of length n (i.e. [0,2,1]
+		 * Uses connect function to match nodes instances (for shuffled array index and value) by updating their peer attribute
+		 */
 		let s = shuffle(this.nodes.length);
 		s.forEach((n, i) => {
 			if (i > 0) {
