@@ -1,6 +1,0 @@
-{
-  "name": "Polkadot",
-  "tagline": "The Polkadot website",
-  "body": "### About\r\n\r\nPolkadot is the extensible heterogeneous multi-chain protocol.\r\n\r\n### More\r\n\r\nFind out more about Polkadot:\r\n\r\n- read the [Polkadot Paper](https://github.com/polkadot-io/polkadotpaper/raw/master/PolkaDotPaper.pdf);\r\n- contribute to the draft on [Github](https://github.com/polkadot-io/polkadotpaper);\r\n- chat about it on [Gitter](https://gitter.im/polkadot-io/Lobby#).\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}

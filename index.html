@@ -1,27 +1,374 @@
 <!doctype html>
-<html>
-	<head>
-		<title>Polkadot</title>
-		<link href="main.css" rel='stylesheet' type='text/css'>
-		<link href="https://fonts.googleapis.com/css?family=Cabin|Zilla+Slab:400,500,600&amp;subset=latin-ext" rel="stylesheet">
-	</head>
-	<body>
-		<canvas id="dots"></canvas>
-		<div id="container">
-			<div id="top"></div>
-			<h1>Polkadot</h1>
-			<h2>Connecting Trust</h2>
-			<p id="links">
-				<a href="https://github.com/polkadot-io/">code</a>
-        <a href="https://gitter.im/w3f/polkadot-white-paper">chat</a>
-        <a href="https://github.com/w3f/polkadot-white-paper/raw/master/PolkaDotPaper.pdf">read</a>
-				<a href="https://twitter.com/polkadotnetwork/">follow</a>
-			</p>
-			<div id="bottom"></div>
-			<p id="footer">
-				Copyright 2016, Parity Technologies Ltd. All rights reserved.
-			</p>
-		</div>
-		<script src="main.js"></script>
-	</body>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="page">
+            <header class="main-header">
+                <div class="container">
+                    <a href="/" class="logo-dot"><img src="i/logo-dot.svg" width="50" height="50" alt="Polkadot" onerror="this.onerror=null; this.src='i/logo-dot.png'"/></a>
+                    <nav class="main-navigation">
+                        <button type="button" class="burger menuMobile">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul>
+                            <li><a href="#what-it-is" class="link scrollSectionTrigger">What&nbsp;is it?</a></li>
+                            <li><a href="#what-does-it-deliver" class="link scrollSectionTrigger">What does it&nbsp;deliver?</a></li>
+                            <li><a href="#how-does-it-work" class="link scrollSectionTrigger">How does it&nbsp;work?</a></li>
+                            <li><a href="#how-is-going" class="link scrollSectionTrigger">What parts are being worked on?</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="socials">
+                        <li><a href="https://github.com/paritytech/parity" target="_blank"><span class="icon icon-github"></span></a></li>
+                        <li><a href="https://twitter.com/ParityTech" target="_blank"><span class="icon icon-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <section class="hero">
+
+                <div class="container">
+                    <div class="text-center">
+
+                        <a href="#" class="logo"><img src="i/logo_hero.png" alt="Polkadot logo"/></a>
+                        <h4 class="hero-header">
+                            Decentralised home for<br />diverse chains.
+                        </h4>
+                        <a href="https://github.com/w3f/polkadot-white-paper/raw/master/PolkaDotPaper.pdf" target="_blank" class="btn btn-primary">Paper</a>
+                        <a href="https://github.com/paritytech/parity" target="_blank" class="btn btn-secondary">Code</a>
+                        <p>or <a href="https://gitter.im/w3f/polkadot-white-paper" target="_blank">chat with us.</a></p>
+
+                    </div>
+                </div>
+                <button type="button" class="scroll heroScrollTrigger"><span class="icon icon-arrow_down"></span></button>
+            </section>
+
+            <section class="what-it-is navSection" id="what-it-is">
+                <div class="container">
+                    <div class="row explanation">
+                        <div class="col-md-4 col-sm-10 col-sm-offset-1">
+                            <img src="i/what-it-is-header.svg" alt="What it is" class="what-it-is-header" width="224" height="137"/>
+                            <h3>Polkadot is a blockchain technology, a heterogeneous multi-chain.</h3>
+                        </div>
+                        <div class="col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 ">
+                            <p class="description">
+                                It consists of many parachains with potentially differing characteristics, such as ability to
+                                provide anonymity or formal verification. Transactions can be spread out across the chains,
+                                allowing many more to be processed in the same period of time. Polkadot ensures that each of
+                                these blockchains remains secure and that any dealings between them are faithfully executed.
+                                Specialised parachains called bridges can be created to link independent chains.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 image">
+                            <img src="i/what_is_it.png" alt="" class="what-it-is-img"/>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-1">
+                            <h4 class="text-secondary-dark">Relay chain</h4>
+                            <p>Coordinates consensus and transaction delivery between chains</p>
+
+                            <h4 class="text-secondary-dark">Parachains</h4>
+                            <p>Constituent block chains which gather and process transactions</p>
+
+                            <h4 class="text-secondary-dark">Bridges</h4>
+                            <p>Link to blockchains with their own consensus such as Ethereum</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="what-does-it-deliver navSection" id="what-does-it-deliver">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 hidden-lg hidden-md text-center">
+                            <img src="i/what-does-it-deliver.svg" alt="What does it deliver" class="what-does-it-deliver-header"/>
+                        </div>
+
+                        <div class="col-md-4 col-sm-5 col-sm-offset-1 col-md-offset-0 security">
+                            <h4 class="text-primary-dark ">Pooled security</h4>
+                            <p>
+                                Enjoyed by all parachains. In Polkadot making a&nbsp;new parachain does not require building
+                                a&nbsp;community from scratch to provide secure execution.
+                            </p>
+                        </div>
+
+                        <div class="col-sm-4 visible-md visible-lg text-center">
+                            <img src="i/what-does-it-deliver.svg" alt="What does it deliver" class="what-does-it-deliver-header"/>
+                        </div>
+
+                        <div class="col-md-4 col-sm-5 transactions">
+                            <h4 class="text-primary-dark">Trust-free transactions</h4>
+                            <p>
+                                Communication between parachains. These are exchanged on every block and enable
+                                data including tokens to be transferred.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="dots-spacer"></div>
+
+            <section class="how-does-it-work navSection" id="how-does-it-work">
+                <div class="container">
+                    <div class="text-center">
+                        <img src="i/how-does-it-work-header.svg" alt="How does it work?" class="how-does-it-work-header" width="224"/>
+                    </div>
+
+                    <div class="features-table">
+                        <div class="features-row">
+                            <div class="features-cell">
+
+                                <div class="text-center">
+                                    <img src="i/img_1.png" alt="" class="image"/>
+                                </div>
+                                <h4 class="text-primary-dark ">Validators</h4>
+                                <p>
+                                    Secure the relay chain by staking DOTs, validating proofs from collators and participating
+                                    in consensus with other validators.
+                                </p>
+                            </div>
+                            <div class="features-cell">
+                                <div class="text-center">
+                                    <img src="i/img_2.png" alt="" class="image"/>
+                                </div>
+                                <h4 class="text-primary-dark ">Nominators</h4>
+                                <p>
+                                    Secure the relay chain by selecting good validators and staking DOTs
+                                </p>
+                            </div>
+                        </div>
+                        <div class="features-row">
+                            <div class="features-cell">
+                                <div class="text-center">
+                                    <img src="i/img_3.png" alt="" class="image"/>
+                                </div>
+                                <h4 class="text-primary-dark ">Collators</h4>
+                                <p>
+                                    Maintain parachains by collecting parachain transactions from users and producing state transition proofs for validators
+                                </p>
+                            </div>
+                            <div class="features-cell">
+                                <div class="text-center">
+                                    <img src="i/img_4.png" alt="" class="image"/>
+                                </div>
+                                <h4 class="text-primary-dark ">Fishermen</h4>
+                                <p>
+                                    Final security frontier, they monitor the network and prove bad behaviour to validators
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dots-spacer-small"></div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1 col-sm-6 additional">
+                            <h4 class="text-primary-dark ">DOT holders</h4>
+                            <p>
+                                Govern the network by voting on the relay chain.
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-md-offset-1 col-sm-6 additional">
+                            <h4 class="text-primary-dark ">Users</h4>
+                            <p>
+								Make use of the features provided by the parachains.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-is-going navSection" id="how-is-going">
+                <img src="i/how-is-going-bg.png" class="bottom-dots" alt=""/>
+
+                <div class="container">
+                    <div class="bg-light">
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-1 header-wrapper">
+                                <img src="i/how-is-the-work-going.svg" alt="How is the work going?" class="how-is-the-work-going-header"/>
+                            </div>
+                            <div class="col-sm-5 col-lg-4 hidden-xs">
+                                <div class="text-right">
+                                    <a href="#" target="_blank" class="btn btn-primary btn-with-shadow">Dig into code!</a>
+                                </div>
+                                <p>
+                                    Polkadot technology consists of a number of components which are being implemented in
+                                    the Parity repository.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                                <ul class="components clearfix">
+                                    <li>
+                                        <h4 class="text-primary-dark">Wasm backend</h4>
+                                        <a href="https://github.com/paritytech/parity/pull/5679" target="_blank" class="link-more">Learn more<span class="icon icon-external-link"></span></a>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-primary-dark">Secret Store and Signer</h4>
+                                        <a href="https://github.com/paritytech/parity/pulls?utf8=%E2%9C%93&q=is%3Apr%20author%3Asvyatonik%20Secretstore" target="_blank" class="link-more">Learn more<span class="icon icon-external-link"></span></a>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-primary-dark">Bridge</h4>
+                                        <p>Being prototyped</p>
+                                        <!--<a href="#" target="_blank" class="link-more">Learn more<span class="icon icon-external-link"></span></a>-->
+                                    </li>
+                                    <li>
+                                        <h4 class="text-primary-dark">Consensus</h4>
+                                        <p>Validity / Availability demo</p>
+                                        <a href="https://github.com/polkadot-io/polkadot-io.github.io/tree/master/consensus-demo" target="_blank" class="link-more">Learn more<span class="icon icon-external-link"></span></a>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-primary-dark">Light client proofs</h4>
+                                        <a href="https://github.com/paritytech/parity/pulls?utf8=%E2%9C%93&q=is%3Apr%20light%20author%3Arphmeier%20" target="_blank" class="link-more">Learn more<span class="icon icon-external-link"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="roadmap">
+                <div class="container">
+                    <div class="text-center">
+                        <img src="i/roadmap.svg" alt="Roadmap" class="roadmap-header"/>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-4 col-sm-7 col-sm-offset-3">
+                            <ul class="list-with-border">
+                                <li>
+                                    <h4 class="text-primary-dark">Finalisation mechanism</h4>
+                                    <p>
+                                        Optimistic BFT proof-of-authority consensus mechanism.<br />
+                                        The mechanism allows the proof of misbehaviour for the dismissal of malicious validators.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Parallelised decentralised candidate selection mechanism</h4>
+                                    <p>
+                                        This is allowing multiple independent items to be agreed upon under a single series
+                                        based upon subjective reception of the partial set of validator statements. Used as
+                                        an input to the finalization mechanism.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Proof-of-stake chain</h4>
+                                    <p>
+                                        Extending the consensus mechanism into proof-of-stake territory; this module includes
+                                        staking tokens, managing entry and exit from the validator pool, a market mechanism
+                                        for determining.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Networking subsystem</h4>
+                                    <p>
+                                        This is the means by which a peer network is formed
+                                        and maintained. First an altered devp2p, then libp2p.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Parachain implementation</h4>
+                                    <p>
+                                        This will include an integration with the proof-of-stake chain, allowing the parachain to gain consensus without its own internal consensus mechanism. More than likely this will include a WebAssembly-based contract execution architecture.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Transaction processing subsystem</h4>
+                                    <p>
+An evolution of the parachain and relay-chain, this will allow for transactions to be sent, received and propagated. It includes the designs of transaction queuing and optimised transaction routing on the network layer.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Transaction-routing subsystem</h4>
+                                    <p>
+This introduces more specifics into the relay-chains’ behaviour. Management of the ingress/egress queues and network protocol with means of directed transaction propagation, ensuring independent parachain collators are not overly exposed to transactions that are not of interest.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Relay chain</h4>
+                                    <p>
+This is the final stage of the relay-chain, allowing the dynamic addition, removal and emergency pausing of parachains, the reporting of bad behaviour and includes implementation of the ‘fisherman’ functionality.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Independent collators</h4>
+                                    <p>
+This is the delivery of an alternative chain-specific collator functionality. It includes proof creation (for collators), parachain misbehaviour detection (for fishermen) and the validation function (for validators). It also includes any additional networking required to allow the two to discover and communicate.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4 class="text-primary-dark">Further non-core components</h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="#" class="logo"><img src="i/logo.png" alt="Polkadot logo"/></a>
+                        </div>
+                        <div class="col-sm-9 footer-nav">
+                            <ul class="footer-links">
+                                <li><a href="https://github.com/w3f/polkadot-white-paper/raw/master/PolkaDotPaper.pdf" target="_blank" class="link">White paper</a></li>
+                                <li><a href="https://gitter.im/w3f/polkadot-white-paper" target="_blank" class="link">Chat</a></li>
+                                <li><a href="https://github.com/paritytech/parity" target="_blank" class="link">Code</a></li>
+                            </ul>
+                            <ul class="socials">
+                                <li><a href="https://github.com/paritytech/parity"><span class="icon icon-github"></span></a></li>
+                                <li><a href="https://twitter.com/ParityTech"><span class="icon icon-twitter"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="copyright">2017 Parity Technologies</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+//            main.addEvent(window, "onload", main.init());
+            main.init();
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>

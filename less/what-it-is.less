@@ -1,0 +1,118 @@
+.what-it-is {
+    position: relative;
+    padding-top: 68px;
+    padding-bottom: 88px;
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fee5dc+0,ffffff+44,ffffff+100 */
+    background: rgb(254,229,220); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(254,229,220,1) 0%, rgba(255,255,255,1) 44%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254,229,220,1) 0%,rgba(255,255,255,1) 44%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254,229,220,1) 0%,rgba(255,255,255,1) 44%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fee5dc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        background: url('../i/what-it-is-bg.png');
+        background-repeat: repeat-x;
+        background-position: top center;
+    }
+
+    h2 {
+        margin-bottom: 26px;
+    }
+
+    h3 {
+        line-height: 1.37;
+        color: @secondary-color-dark;
+    }
+
+    h4 { margin-bottom: 2px; }
+
+    p {
+        color: @text-dark;
+        line-height: 1.45;
+        margin-bottom: 40px;
+    }
+
+    .description {
+        color: @text;
+        padding-top: 70px;
+        margin-bottom: 15px;
+        line-height: 1.9;
+    }
+
+    .explanation {
+        padding-bottom: 77px;
+    }
+
+    .what-it-is-img {
+        max-width: 463px;
+        width: 100%;
+        height: auto;
+        margin-top: -12px;
+        margin-left: 30px;
+
+    }
+
+    .what-it-is-header {
+        margin-top: 2px;
+        margin-bottom: 41px;
+        margin-left: -9px;
+    }
+
+    .image { float: right; }
+}
+
+@media (max-width: 1199px) {
+    .what-it-is .what-it-is-img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .what-it-is {
+        padding-top: 53px;
+
+        h2 { margin-bottom: 22px; }
+        h3 { margin-bottom: 12px; }
+
+        p {  margin-bottom: 24px; }
+
+        .what-it-is-img {
+            margin-left: 0;
+            margin-top: 62px;
+        }
+
+        .description { padding-top: 0; }
+    }
+}
+
+@media (max-width: 767px) {
+    .what-it-is {
+        padding-bottom: 42px;
+
+        h3 { line-height: 1.45; margin-bottom: 16px; }
+        h2 { margin-bottom: 12px; }
+
+        p { margin-bottom: 19px; }
+
+        .image { float: none; text-align: center; }
+
+        .what-it-is-img {
+            max-width: 400px;
+            margin-top: 0;
+            margin-bottom: 37px;
+        }
+
+        .explanation {
+            padding-bottom: 30px;
+        }
+    }
+}
