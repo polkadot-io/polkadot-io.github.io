@@ -315,11 +315,10 @@ class Node {
 }
 
 function shuffle(n) {
-	let ret = [];
-	for (let i = 0; i < n; ++i) {
-		ret.push(i);
-	}
-	for (let i = 0; i < n * 16; ++i) {
+	// Generates array with length parameter n (i.e. [0,1,2] for n of 3 then shuffles
+	let loopFactor = 16;
+	let ret = Array.apply(null, Array(n)).map(function (x, i) { return i; });
+	for (let i = 0; i < n * loopFactor; ++i) {
 		let x = Math.floor(Math.random() * n);
 		let y = i % n;
 		if (x != y) {
@@ -387,9 +386,13 @@ class World {
 	}
 
 	connectLinear() {
+		/*
+		 * Uses shuffle function to obtain shuffled array of nodes of length n (i.e. [0,2,1]
+		 * Uses connect function to match nodes instances (for shuffled array index and value) by updating their peer attribute
+		 */
 		let s = shuffle(this.nodes.length);
 		s.forEach((n, i) => {
-			if (i > 0) {
+			if (i > 1) {
 				let j = s[i - 1];
 				this.connect(this.nodes[n], this.nodes[j]);
 			}
@@ -400,6 +403,7 @@ class World {
 		p1.addPeer(p2.id);
 		p2.addPeer(p1.id);
 	}
+
 	disconnect (p1, p2) {
 		p1.killPeer(p2.id);
 		p2.killPeer(p1.id);
@@ -437,20 +441,22 @@ class World {
 	}
 }
 
-window.world = new World();
-window.world.startRound();
+var world = new World();
+world.startRound();
 
 function start() {
-	window.world.startRound();
+	world.startRound();
 	update();
 }
 
 function tick() {
-	window.world.tickRound();
+	world.tickRound();
 	update();
 }
 
 function update() {
+	if (typeof window == "undefined") { return; }
+	window.world = world;
 	document.getElementById('app').innerHTML = window.world.render();
 }
 
